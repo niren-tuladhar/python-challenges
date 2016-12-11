@@ -1,3 +1,4 @@
+#!/usr/bin/env
 from random import randint
 from sys import exit
 
@@ -56,7 +57,7 @@ def game_summary():
     g = len(summary)
     w = summary.count('w')
     d = summary.count('d')
-    l = g - w - d
+    l = summary.count('l')
 
     #Checks whether total games is zero. If not, proceeds to display the summary.
     if(g != 0):
